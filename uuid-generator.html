@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>String count</title>
-    <link rel="stylesheet" href="stringoperation.css">
-    <script src="./count.js" defer></script>
+    <title>UUID Generator</title>
+    <link rel='stylesheet' href="stringoperation.css">
+    <script src="./uuid.js" defer></script>
 </head>
 <body>
     <div class="navbar">
@@ -14,7 +14,7 @@
         <div class="dropdown">
           <button class="dropbtn">String Operations </button>
           <div class="dropdown-content">
-            <a href="stringoperations.html">Upper Case</a>
+            <a href="stringoperations.html">UpperCase</a>
             <a href="stringoperations.html">Lower Case</a>
             <a href="stringoperations.html">Capitalize</a>
             <a href="stringoperations.html">Reverse</a>
@@ -44,33 +44,21 @@
     <section class="wrapper">
         <form action="">
             <fieldset class="fieldset">
-                <legend class="label">String operations</legend>
-                <label for="text-area-input" class="label" >Enter a string : </label>
-                <p><textarea class="text-area-input" rows="10" cols="70" ></textarea></p>
-
-                <p class="p-button">
-                    <label for="text-area-output" class="label" >Character Count : </label>
-                    <input type="text" class="output-1" readonly placeholder="Character Count">
-                </p>
-                <p>
-                    <label for="text-area-output" class="label">Word Count : </label>
-                    <input class="output-2" readonly placeholder="Word Count" >
-                </p>   
+                <legend class="label">UUID version 4 Generator : </legend>
                 
-                <p>
-                    <label for="text-area-output" class="label" >Sentence Count : </label>
-                    <input class="output-3" readonly placeholder="Sentence Count">
+                
+                <p class="p-button" style="text-align: center;">
+                    <button type="button" class="but generate">Generate a version 4 UUID</button>
                 </p>
-                    
-                <!-- <p>
-                    <label for="text-area-output" class="label" >Paragraph Count : </label>
-                    <input class="output-4" readonly placeholder="Page Count">
-                </p> -->
+                <label for="text-area-output" class="label">Output : </label>
+                <p><textarea class="text-area-output" rows="10" cols="60" readonly></textarea></p>
+                
                 <p><input type="reset" value="Reset" class="but">
+                <button type="button" class="but copy">copy</button></p>
             </fieldset>
         </form>
     </section>
-    <div class=above-footers>
+    <div class=above-footers-1>
 
     </div>
     <footer class="footer">
